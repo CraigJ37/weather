@@ -11,3 +11,4 @@ It fetches real-time data from the OpenWeather API , processes the JSON response
 * **Min/Max Temperatures:** Dinamically calculates and displays thi highest and lowest temperatures for the coming day.
 * **Interactive CSS Animations:** Features smooth custom animation (like responsive clouds, rain, and a pulsing sunbeam) based on the current weather.
 * **User Preferences:** Saves the last succesfully searched city in 'localStorage' so you don't have to re-enter it on your next visit.  
+* **Automatic wind analysis:** predicts wind and its speed for every 3-hour period, describes the current wind speed on the Beaufort scale and indicates the speed of possible wind gusts.
