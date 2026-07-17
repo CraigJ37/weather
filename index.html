@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weather.css" />
+    <title>Document</title>
+</head>
+<body>
+    <h1>Точный прогноз погоды</h1>
+    <form name="weatherchoice" class="search-form">
+      <label for="weathercity" class="city-choice">Укажите город</label>
+      <input id="weathercity" type="text" name="weathercity" placeholder="Смоленск" required>
+      <button id="weathercitybutton" required name="weathercitybutton">Указать</button>
+    </form>
+    <div class="main-weather">
+        <div class="today">
+          <div class="rain-container" id="rain-today"></div>
+          <div class="thunder-container" id="thunder-today"></div>
+          <div class="snow-container" id="snow-today"></div>
+          <div class="cloudiness-container" id="clouds-today"></div>
+          <div class="cloudy-container" id="big-cloud-today"></div>
+          <div class="sunny-container" id="sunny-today"></div>
+          <h2 id="city">Смоленск</h2>
+          <h2 id="temperature">23</h2>
+          <p id="weather-words">Облачно с прояснениями</p>
+        </div>
+        <div class="tomorrow">
+            <div class="rain-container" id="rain-tomorrow"></div>
+            <div class="thunder-container" id="thunder-tomorrow"></div>
+            <div class="snow-container" id="snow-tomorrow"></div>
+            <div class="cloudiness-container" id="clouds-tomorrow"></div>
+            <div class="cloudy-container" id="big-cloud-tomorrow"></div>
+            <div class="sunny-container" id="sunny-tomorrow"></div>
+            <h2 id="city-tomorrow">Смоленск</h2>
+            <h2 id="temperature-tomorrow">26</h2>
+            <p id="weather-words-tomorrow">Ясно</p>
+        </div>
+    </div>
+    <div class="feels-like">
+        <div class="feels-like-container">
+            <h3 class="feels-like-text">Ощущается как:</h3>
+            <h3 class="feels-like-temperature" id="feels-like-temperature">--℃</h3>
+            <h3 class="chance-of-precipitation" id="chance-of-precipitation"></h3>
+        </div>
+        <div class="wind-container">
+            <h3 class="wind-description" id="wind-description">--</h3>
+            <h3 class="wind-speed" id="wind-speed">--</h3>
+            <h3 class="wind-gust" id="wind-gust">--</h3>
+        </div>
+    </div>
+    <div class="from">
+        <table id="temperature-table">
+            <caption>Ближайшие 24 часа</caption>
+            <tbody id="hours">
+                <tr id="table-hours"></tr>
+                <tr id="table-temps"></tr>
+                <tr id="table-weather"></tr>
+                <tr id="table-wind"></tr>
+            </tbody>
+        </table>
+    </div>
+    <h2 class="max-min">Минимальная и максимальная температура в ближайшие 24 часа</h2>
+    <div class="min-and-max">
+        <div id="max-temperature" class="hot-places-container">
+            <h2 class="max-temperature-city" id="maximum-city">Максимум за 24 часа</h2>
+            <h2 class="max-temperature-number" id="maximum-temperature-today">--℃</h2>
+            </ul>
+        </div>
+        <div id="min-temperature">
+            <h2 class="min-temperature-city" id="minimum-city">Минимум за 24 часа</h2>
+            <h2 class="min-temperatre-number" id="minimum-temperature-today">--℃</h2>
+        </div>
+    </div>
+    <div id="error-popup" class="error-popup-hidden">
+        <div id="error-popup-content">
+            <h2 class="error-popup-icon">!!!</h2>
+            <p class="error-popup-text" id="error-popup-text">Произошла ошибка!</p>
+            <button class="error-popup-button" id="error-popup-button">Попробовать снова</button>
+        </div>
+    </div>
+    <script src="Weather.js"></script>
+</body>
+</html>
