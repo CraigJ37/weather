@@ -38,7 +38,7 @@ h1 {
 
 #weathercity {
     margin-right: 10px;
-    width: 300px;
+    width: 30vw;
     height: 40px;
     border-radius: 10px;
     border: 3px solid #ffffff;
@@ -559,5 +559,76 @@ th, td {
     100% {
         --gradient-color-max-min-1: #4796a5;
         --gradient-color-max-min-2: #183f6c;
+    }
+}
+
+
+@media (max-width: 600px) {
+    div.from {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 10px;
+    }
+
+    #temperature-table {
+        min-width: 800px;
+        width: max-content;
+        table-layout: auto;
+        border-collapse: collapse;
+        margin-bottom: 15px;
+    }
+
+    #temperature-table td, #temperature-table th, #temperature-table tr {
+        white-space: nowrap;
+        padding: 10px 15px;
+    }
+
+    div.main-weather {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    div.today, div.tomorrow {
+        width: 100%;
+        max-width: 380px;
+        box-sizing: border-box;
+    }
+
+    body {
+        text-align: center;
+    }
+
+    div.min-and-max {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    div.min-temerature, div.maxtemerature {
+        width: 100%;
+        max-width: 380px;
+        box-sizing: border-box;
+    }
+
+    #weathercity {
+        width: 60vw;
+    }
+
+    div.feels-like-container, div.wind-container {
+        display: flex;
+        flex-direction: row;
+        font-size: 0.70rem;
+        text-align: center;
+        vertical-align: center;
+    }
+
+    #temperature-table caption {
+        text-align: start;
     }
 }
