@@ -631,4 +631,9 @@ th, td {
     #temperature-table caption {
         text-align: start;
     }
+
+    #error-popup {
+        top: -400px;
+        width: 100vw;
+    }
 }
